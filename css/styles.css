@@ -49,6 +49,34 @@
         display: none;
     }
 
+    .footer-social {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .footer-social .icon {
+        width: 1.25rem;
+        height: 1.25rem;
+        color: white;
+    }
+
+    @media (max-width: 400px) {
+        nav.is-fixed-bottom .button {
+            padding-left: 0.75rem;
+            padding-right: 0.75rem;
+            font-size: 0.85rem;
+        }
+
+        nav.is-fixed-bottom .column {
+            padding: 0.5rem;
+        }
+
+        .footer-social {
+            gap: 0.35rem;
+        }
+    }
+
     #snow {
         position: fixed;
         inset: 0;
