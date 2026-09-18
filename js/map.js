@@ -1,12 +1,12 @@
 // --------------------------------------------------------
 // Javascript for Santa Tracker map
 // --------------------------------------------------------
-    const central_date = new Date(2025, 12, 18);
-    const chantrys_date = new Date(2025, 12, 16);
-    const folly_hill_date = new Date(2025, 12, 9);
-    const heath_end_date = new Date(2025, 12, 17);
-    const rowledge_date = new Date(2025, 12, 11);
-    const south_farnham_date = new Date(2025, 12, 10);
+    const central_date = new Date(2026, 11, 17);
+    const chantrys_date = new Date(2026, 11, 8);
+    const folly_hill_date = new Date(2026, 11, 9);
+    const heath_end_date = new Date(2026, 11, 15);
+    const rowledge_date = new Date(2026, 11, 10);
+    const south_farnham_date = new Date(2026, 11, 16);
     const date_options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
 
     const firebaseURL = "https://frt-santas-sleigh-default-rtdb.europe-west1.firebasedatabase.app/location/current.json";
@@ -55,12 +55,12 @@
     };
 
     const overlays = {
-      "<span style='color: green'>Folly Hill, Tue 9th Dec</span>": folly_hill,
-      "<span style='color: deeppink'>South Farnham, Wed 10th Dec</span>": south_farnham,
-      "<span style='color: darkorchid'>Rowledge, Thu 11th Dec</span>": rowledge,
-      "<span style='color: blue'>Chantrys, Tue 16th Dec</span>": chantrys,
-      "<span style='color: black'>Heath End, Wed 17th Dec</span>": heath_end,
-      "<span style='color: red'>Central Farnham, Thu 18th Dec</span>": central,
+      "<span style='color: blue'>Chantrys, Tue 8th Dec</span>": chantrys,
+      "<span style='color: green'>Folly Hill, Wed 9th Dec</span>": folly_hill,
+      "<span style='color: darkorchid'>Rowledge, Thu 10th Dec</span>": rowledge,
+      "<span style='color: black'>Heath End, Tue 15th Dec</span>": heath_end,
+      "<span style='color: deeppink'>South Farnham, Wed 16th Dec</span>": south_farnham,
+      "<span style='color: red'>Central Farnham, Thu 17th Dec</span>": central,
     }
 
     const layerControl = L.control.layers(baseMaps, overlays, {hideSingleBase: true, position: "bottomright"}).addTo(map);
