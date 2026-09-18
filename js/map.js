@@ -111,7 +111,7 @@
 
     followBtn.addEventListener('click', () => {
       followSanta = !followSanta;
-      followBtn.textContent = `Follow Santa: ${followSanta ? 'ON' : 'OFF'}`;
+      followBtn.textContent = `Follow: ${followSanta ? 'ON' : 'OFF'}`;
       if (followSanta) {
         followBtn.classList.replace("is-warning", "is-success")
       } else {
@@ -123,7 +123,7 @@
     map.on('dragstart zoomstart', () => {
       if (followSanta) {
         followSanta = false;
-        followBtn.textContent = 'Follow Santa: OFF';
+        followBtn.textContent = 'Follow: OFF';
         followBtn.classList.replace("is-success", "is-warning");
       }
     });
