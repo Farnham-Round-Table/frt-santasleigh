@@ -56,9 +56,24 @@
     }
 
     .footer-social .icon {
+        position: relative;
         width: 1.25rem;
         height: 1.25rem;
         color: white;
+    }
+
+    .footer-social .icon:visited,
+    .footer-social .icon:hover,
+    .footer-social .icon:active {
+        color: white;
+    }
+
+    /* Invisible padding that enlarges the tappable area to ~44px
+       (the recommended minimum touch target) without affecting layout. */
+    .footer-social .icon::after {
+        content: "";
+        position: absolute;
+        inset: -12px;
     }
 
     @media (max-width: 400px) {
